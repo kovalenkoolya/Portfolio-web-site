@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
     margin: 0;
-    box-sizing: border-border-box;
+    box-sizing: border-box;
   }
 
   body {
@@ -40,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
 
   h4 {
     font-weight: bold;
+    font-size: 2rem;
   }
 
   a {
