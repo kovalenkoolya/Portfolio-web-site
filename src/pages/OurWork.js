@@ -11,23 +11,23 @@ const OurWork = () => {
   return (
     <Work>
       <Movie>
-        <h2>The athlete</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/the-athlete">
+        <h2>The athlete</h2>
           <img src={athlete} alt="athlete"/>
         </Link>
       </Movie>
       <Movie>
-        <h2>The Racer</h2>
         <div className="line"></div>
-        <Link>
+        <Link  to="/work/the-racer">
+          <h2>The Racer</h2>
           <img src={theracer} alt="theracer"/>
         </Link>
       </Movie>
       <Movie>
-        <h2>Good Times</h2>
         <div className="line"></div>
-        <Link>
+        <Link  to="/work/good-times">
+          <h2>Good Times</h2>
           <img src={goodtimes} alt="goodtimes"/>
         </Link>
       </Movie>
@@ -46,6 +46,10 @@ const Work = styled.div`
 `
 const Movie = styled.div`
   padding-bottom: 10rem;
+ a {
+  text-decoration: none;
+  color: black;
+ }
   .line {
     height: 0.5rem;
     background: #cccccc;
